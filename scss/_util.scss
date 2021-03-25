@@ -1,0 +1,27 @@
+.container {
+  margin: 0 5rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.btn-white {
+  display: inline-block;
+  padding: 0.8em 1.8em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  transition: all 0.2s;
+}
