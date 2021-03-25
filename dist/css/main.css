@@ -154,8 +154,7 @@ body {
 .title-work {
   height: 22rem;
   color: #fff;
-  text-align: center;
-  background-position: 100% 62%; }
+  text-align: center; }
 
 .timeline-section {
   display: flex;
