@@ -64,8 +64,8 @@ body {
 }
 
 #main-header {
-  height: 100vh;
-  background: url("../img/main-background.jpg") no-repeat center center/cover;
+  // height: 100vh;
+  // background: url("../img/main-background.jpg") no-repeat center center/cover;
 
   .title {
     font-size: 3.5rem;
@@ -191,7 +191,7 @@ body {
   height: 22rem;
   color: #fff;
   text-align: center;
-  background: url("../img/work_background.jpeg") no-repeat center center/cover;
+  //background: url("../img/work_background.jpeg") no-repeat center center/cover;
   background-position: 100% 62%;
 }
 
@@ -257,8 +257,8 @@ body {
 //about.html
 .about-header {
   .about-intro {
-    background: url("../img/greg.jpeg") no-repeat center center/cover;
-    background-position: 100% 30%;
+    // background: url("../img/greg.jpeg") no-repeat center center/cover;
+    // background-position: 100% 30%;
 
     font-family: "Open Sans", sans-serif;
     margin-bottom: 40px;
@@ -355,7 +355,7 @@ body {
 
 // contact page
 #contact-section {
-  background: url("../img/contact_background.jpg") no-repeat center center/cover;
+  //background: url("../img/contact_background.jpg") no-repeat center center/cover;
   h1 {
     padding-top: 30px;
     font-size: 4rem;
