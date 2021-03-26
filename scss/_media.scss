@@ -1,0 +1,82 @@
+//Smart Phones
+@media (max-width: 500px) {
+  .container {
+    margin: 0 0;
+  }
+
+  #main-header {
+    height: 100vh;
+    width: 100vw;
+  }
+  #navbar {
+    flex-direction: column;
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+      li {
+        border-bottom: #fff 1px solid;
+      }
+    }
+  }
+
+  #main-header {
+    .title {
+      font-size: 1.2rem;
+      padding-top: 30%;
+      text-align: center;
+      color: #fff;
+
+      p {
+        font-size: 1.1rem;
+        color: $star-command-blue;
+      }
+    }
+  }
+  // Section A
+  #section-a {
+    .tech-stack-flex {
+      &-item {
+        max-width: 100vw;
+        align-self: start;
+
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0;
+
+        & > div:first-child {
+          grid-column: 1 / 3;
+          height: 50px;
+          border-bottom: #333 3px solid;
+
+          span {
+            font-size: 1.5rem;
+            font-weight: 1000;
+          }
+        }
+        .tech-stack-grid-item {
+          border: #ccc 1px solid;
+          height: 210px;
+          width: 100%;
+
+          .card {
+            &-item {
+              height: 50%;
+              align-self: center;
+              margin-top: 20px;
+
+              img,
+              i {
+                height: 100px;
+                width: auto;
+              }
+
+              h3 {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
