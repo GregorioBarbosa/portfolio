@@ -124,7 +124,6 @@ body {
         #section-a .tech-stack-flex-item > div:first-child span {
           font-size: 2.5rem; }
       #section-a .tech-stack-flex-item .tech-stack-grid-item {
-        border: #ccc 1px solid;
         height: 300px;
         width: 100%; }
         #section-a .tech-stack-flex-item .tech-stack-grid-item .card {
@@ -349,8 +348,8 @@ body {
     #navbar ul {
       flex-direction: column;
       text-align: center; }
-      #navbar ul li {
-        border-bottom: #fff 1px solid; }
+    #navbar .logo {
+      display: none; }
   #main-header .title {
     font-size: 1.2rem;
     padding-top: 30%;
@@ -360,28 +359,93 @@ body {
       font-size: 1.1rem;
       color: #0077b6; }
   #section-a .tech-stack-flex-item {
-    max-width: 100vw;
-    align-self: start;
+    align-self: center;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px 0; }
+    margin: 20px 0;
+    width: 90%; }
     #section-a .tech-stack-flex-item > div:first-child {
       grid-column: 1 / 3;
-      height: 50px;
-      border-bottom: #333 3px solid; }
+      height: 75px; }
       #section-a .tech-stack-flex-item > div:first-child span {
         font-size: 1.5rem;
         font-weight: 1000; }
     #section-a .tech-stack-flex-item .tech-stack-grid-item {
-      border: #ccc 1px solid;
-      height: 210px;
-      width: 100%; }
-      #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item {
-        height: 50%;
-        align-self: center;
-        margin-top: 20px; }
+      height: 200px;
+      width: 100%;
+      max-width: 100%;
+      min-width: 80%; }
+      #section-a .tech-stack-flex-item .tech-stack-grid-item .card {
+        min-width: 100px; }
         #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item img,
         #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item i {
-          height: 100px;
+          height: 80px;
           width: auto; }
         #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item h3 {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem; }
+  .title-work {
+    height: 15rem; }
+  .timeline-section .timeline-flex {
+    flex-direction: column; }
+    .timeline-section .timeline-flex-item {
+      height: 500px; }
+      .timeline-section .timeline-flex-item:nth-child(1) {
+        height: 300px; }
+      .timeline-section .timeline-flex-item .timeline-text {
+        align-items: center;
+        padding: 20px;
+        border-bottom: #333 10px solid; }
+        .timeline-section .timeline-flex-item .timeline-text h2 {
+          font-size: 2rem;
+          font-weight: 1000; }
+        .timeline-section .timeline-flex-item .timeline-text p {
+          margin-top: 12px; }
+        .timeline-section .timeline-flex-item .timeline-text .meta-info {
+          margin-bottom: 10px; }
+    .timeline-section .timeline-flex:nth-child(even) {
+      flex-direction: column;
+      border-bottom: #fff 10px solid; }
+  #contact-section h1 {
+    padding-top: 30px;
+    font-size: 2rem; }
+  #contact-section .contact-flex {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: column; }
+    #contact-section .contact-flex-item {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      #contact-section .contact-flex-item:nth-child(1) {
+        justify-content: flex-end;
+        padding-left: 0;
+        padding: 20px 20px; }
+      #contact-section .contact-flex-item:nth-child(3) {
+        justify-content: center; }
+      #contact-section .contact-flex-item .seperator {
+        width: 90%;
+        height: 5px; }
+      #contact-section .contact-flex-item img {
+        height: 200px;
+        width: 200px;
+        transition: all 0.4s ease-in-out;
+        background: #fff;
+        margin-right: 0;
+        border-radius: 20%; }
+      #contact-section .contact-flex-item form {
+        margin-top: 20px; }
+        #contact-section .contact-flex-item form label {
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+          font-weight: 1000; }
+        #contact-section .contact-flex-item form input {
+          width: 100%;
+          line-height: 2;
+          margin-bottom: 20px;
+          font-size: 1rem; }
+        #contact-section .contact-flex-item form textarea {
+          width: 100%;
+          margin-bottom: 15px;
+          font-size: 1rem; } }
