@@ -337,6 +337,119 @@ body {
       .main-footer-item i:hover {
         color: #333; }
 
+@media (max-width: 800px) {
+  #main-header .title {
+    font-size: 2.4rem;
+    padding-top: 40%; }
+    #main-header .title p {
+      font-size: 2rem;
+      color: #0077b6; }
+  #section-a .tech-stack-flex-item {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%; }
+    #section-a .tech-stack-flex-item > div:first-child {
+      grid-column: 1 / 4;
+      height: 75px; }
+      #section-a .tech-stack-flex-item > div:first-child span {
+        font-size: 2rem;
+        font-weight: 1000; }
+    #section-a .tech-stack-flex-item .tech-stack-grid-item {
+      height: 200px;
+      width: 100%; }
+      #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item img,
+      #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item i {
+        height: 80px;
+        width: auto; }
+      #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item h3 {
+        font-size: 2rem; }
+  .timeline-section .timeline-flex-item .timeline-text {
+    padding: 20px; }
+    .timeline-section .timeline-flex-item .timeline-text h2 {
+      font-size: 2.5rem; }
+    .timeline-section .timeline-flex-item .timeline-text p {
+      margin-top: 5px;
+      font-size: 1.3rem; }
+    .timeline-section .timeline-flex-item .timeline-text .meta-info {
+      margin-bottom: 15px; }
+  .timeline-section .timeline-flex:nth-child(even) {
+    flex-direction: row-reverse;
+    background: #333;
+    color: #fff; }
+  .timeline-section .timeline-flex:nth-child(2) img {
+    object-position: 80% 100%; }
+  .timeline-section .timeline-flex:nth-child(3) img {
+    object-position: 40% 100%; }
+  .timeline-section .timeline-flex:nth-child(6) img {
+    object-position: 25% 100%; }
+  .timeline-section .timeline-flex:nth-child(7) img {
+    object-position: 90% 100%; }
+  .timeline-section .timeline-flex:nth-child(8) img {
+    object-position: 25% 100%; }
+  .timeline-section .timeline-flex:nth-child(9) img {
+    object-position: 70% 100%; }
+  .about-header .about-intro {
+    margin-bottom: 20px;
+    height: 33vh; }
+    .about-header .about-intro h1 {
+      display: none; }
+  #about-text .about-text-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 20px; }
+    #about-text .about-text-grid-item:first-child {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(2) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(3) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(4) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(5) {
+      margin-top: 20px;
+      grid-row-start: 4; }
+    #about-text .about-text-grid-item p {
+      font-size: 1.1rem; }
+    #about-text .about-text-grid img {
+      width: 100%;
+      height: 100%;
+      max-height: 100%; }
+  .hobby-section h2 {
+    font-size: 2.5rem; }
+  .hobby-section .hobbies {
+    margin: 20px;
+    padding: 0 0px; }
+    .hobby-section .hobbies-images {
+      grid-template-columns: repeat(3, 1fr); }
+      .hobby-section .hobbies-images-item img {
+        width: 90%; }
+  #contact-section h1 {
+    font-size: 2.5rem; }
+  #contact-section .contact-flex {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: column; }
+    #contact-section .contact-flex-item {
+      width: 100%;
+      height: 40%; }
+      #contact-section .contact-flex-item:nth-child(1) {
+        justify-content: center;
+        padding-left: 0;
+        padding: 20px 20px; }
+      #contact-section .contact-flex-item:nth-child(3) {
+        justify-content: center; }
+      #contact-section .contact-flex-item .seperator {
+        width: 90%;
+        height: 5px; }
+      #contact-section .contact-flex-item img {
+        height: 250px;
+        width: 250px;
+        background: #fff;
+        margin-right: 0;
+        border-radius: 20%;
+        margin-bottom: 20px; }
+      #contact-section .contact-flex-item form {
+        margin-top: 90px; } }
+
 @media (max-width: 500px) {
   .container {
     margin: 0 0; }
@@ -348,16 +461,26 @@ body {
     #navbar ul {
       flex-direction: column;
       text-align: center; }
+      #navbar ul li:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 10px;
+        left: 25%;
+        border-bottom: 1px solid #ccc; }
     #navbar .logo {
       display: none; }
+    #navbar .current:before {
+      content: "";
+      width: 20%;
+      left: 40%;
+      border-bottom: 2px solid #ade8f4; }
   #main-header .title {
     font-size: 1.2rem;
-    padding-top: 30%;
-    text-align: center;
-    color: #fff; }
+    padding-top: 30%; }
     #main-header .title p {
-      font-size: 1.1rem;
-      color: #0077b6; }
+      font-size: 1.1rem; }
   #section-a .tech-stack-flex-item {
     align-self: center;
     grid-template-columns: repeat(2, 1fr);
@@ -404,11 +527,45 @@ body {
     .timeline-section .timeline-flex:nth-child(even) {
       flex-direction: column;
       border-bottom: #fff 10px solid; }
+  .about-header .about-intro {
+    margin-bottom: 20px;
+    height: 33vh; }
+    .about-header .about-intro h1 {
+      display: none; }
+  #about-text .about-text-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 20px; }
+    #about-text .about-text-grid-item:first-child {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(2) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(3) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(4) {
+      grid-column: auto; }
+    #about-text .about-text-grid-item:nth-child(5) {
+      margin-top: 20px;
+      grid-row-start: 4; }
+    #about-text .about-text-grid-item p {
+      font-size: 1.1rem; }
+    #about-text .about-text-grid img {
+      width: 100%;
+      height: 100%;
+      max-height: 100%; }
+  .hobby-section h2 {
+    font-size: 2rem; }
+  .hobby-section .hobbies {
+    margin: 20px;
+    padding: 0 0px; }
+    .hobby-section .hobbies-images {
+      grid-template-columns: repeat(2, 1fr); }
+      .hobby-section .hobbies-images-item img {
+        width: 90%; }
   #contact-section h1 {
     padding-top: 30px;
     font-size: 2rem; }
   #contact-section .contact-flex {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     padding: 2rem 0;
     flex-direction: column; }
@@ -448,4 +605,6 @@ body {
         #contact-section .contact-flex-item form textarea {
           width: 100%;
           margin-bottom: 15px;
-          font-size: 1rem; } }
+          font-size: 1rem; }
+  .main-footer-item p {
+    font-size: 0.7rem; } }
