@@ -710,7 +710,7 @@ body {
     height: 200vh;
     padding: 0rem 0; } }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (min-width: 700px) {
   #main-header .title {
     padding-top: 30%; }
   #contact-section h1 {
