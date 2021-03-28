@@ -187,7 +187,6 @@
   }
 
   //work page
-
   .timeline-section {
     .timeline-flex {
       &-item {
@@ -728,6 +727,154 @@
     .contact-flex {
       height: 180vh;
       padding: 0rem 0;
+    }
+  }
+}
+
+//landscape
+@media (max-height: 420px) {
+  // Header
+  #navbar {
+    .logo i {
+      transform: translateX(-50px);
+    }
+    ul {
+      li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.7rem 1rem;
+
+        &:hover {
+          color: $sky-blue-crayola;
+        }
+      }
+    }
+  }
+
+  #main-header {
+    .title {
+      font-size: 1.8rem;
+      padding-top: 10%;
+
+      p {
+        font-size: 1.5rem;
+        color: 333;
+      }
+    }
+  }
+
+  #section-a {
+    .tech-stack-flex {
+      &-item {
+        align-self: center;
+        grid-template-columns: repeat(2, 1fr);
+        & > div:first-child {
+          grid-column: 1 /3;
+          height: 75px;
+
+          span {
+            font-size: 1.5rem;
+            font-weight: 1000;
+          }
+        }
+
+        .tech-stack-grid-item {
+          height: 170px;
+          .card {
+            &-item {
+              img,
+              i {
+                height: 70px;
+                width: auto;
+              }
+
+              h3 {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //work page
+  .timeline-section {
+    .timeline-flex {
+      &:nth-child(6) {
+        img {
+          object-position: 25% 100%;
+        }
+      }
+      &:nth-child(7) {
+        img {
+          object-position: 90% 100%;
+        }
+      }
+      &:nth-child(8) {
+        img {
+          object-position: 25% 100%;
+        }
+      }
+      &:nth-child(9) {
+        img {
+          object-position: 70% 100%;
+        }
+      }
+    }
+  }
+  //about.html
+  .about-header {
+    .about-intro {
+      height: 55vh;
+    }
+  }
+
+  // contact page
+  #contact-section {
+    .contact-flex {
+      height: 200vh;
+      padding: 0rem 0;
+      flex-direction: column;
+
+      &-item {
+        height: 50%;
+
+        &:nth-child(1) {
+          justify-content: center;
+        }
+
+        img {
+          height: 200px;
+          width: 200px;
+          transition: all 0.4s ease-in-out;
+          background: #fff;
+          margin-right: 0;
+          border-radius: 20%;
+        }
+
+        form {
+          label {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            font-weight: 1000;
+          }
+
+          input {
+            width: 100%;
+            line-height: 2;
+            margin-bottom: 20px;
+            font-size: 1rem;
+          }
+
+          textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }
