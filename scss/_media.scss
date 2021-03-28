@@ -727,6 +727,27 @@
       font-size: 2rem;
     }
     .contact-flex {
+      height: 200vh;
+      padding: 0rem 0;
+    }
+  }
+}
+
+//landscape tablet
+@media (max-height: 800px) {
+  #main-header {
+    .title {
+      padding-top: 30%;
+    }
+  }
+
+  // contact page
+  #contact-section {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .contact-flex {
       height: 180vh;
       padding: 0rem 0;
     }
