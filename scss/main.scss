@@ -203,7 +203,7 @@ body {
         justify-content: center;
         align-content: center;
         padding: 35px;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
         height: 100%;
         overflow-wrap: break-word;
 
@@ -215,6 +215,7 @@ body {
         p {
           margin-top: 8px;
           font-size: 1.3rem;
+          line-height: 1.5;
         }
 
         .meta-info {
@@ -238,6 +239,7 @@ body {
       flex-direction: row-reverse;
       background: #333;
       color: #fff;
+      font-family: "Roboto", sans-serif;
     }
   }
 }
@@ -260,11 +262,6 @@ body {
       margin-left: 5rem;
       padding-top: 1rem;
     }
-
-    p {
-      line-height: 2;
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -272,8 +269,7 @@ body {
   .about-text-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-family: "Open Sans", sans-serif;
-
+    font-family: "Roboto", sans-serif;
     &-item {
       margin-bottom: 10px;
 
@@ -301,7 +297,7 @@ body {
 
       p {
         font-size: 1.2rem;
-        line-height: 1.5;
+        line-height: 1.7;
       }
     }
 

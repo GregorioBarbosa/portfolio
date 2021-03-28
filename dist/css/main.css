@@ -170,7 +170,7 @@ body {
         justify-content: center;
         align-content: center;
         padding: 35px;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
         height: 100%;
         overflow-wrap: break-word; }
         .timeline-section .timeline-flex-item .timeline-text h2 {
@@ -178,7 +178,8 @@ body {
           font-weight: 100; }
         .timeline-section .timeline-flex-item .timeline-text p {
           margin-top: 8px;
-          font-size: 1.3rem; }
+          font-size: 1.3rem;
+          line-height: 1.5; }
         .timeline-section .timeline-flex-item .timeline-text .meta-info {
           margin-bottom: 20px;
           color: #0077b6; }
@@ -191,7 +192,8 @@ body {
     .timeline-section .timeline-flex:nth-child(even) {
       flex-direction: row-reverse;
       background: #333;
-      color: #fff; }
+      color: #fff;
+      font-family: "Roboto", sans-serif; }
 
 .about-header .about-intro {
   font-family: "Open Sans", sans-serif;
@@ -205,14 +207,11 @@ body {
     color: #333;
     margin-left: 5rem;
     padding-top: 1rem; }
-  .about-header .about-intro p {
-    line-height: 2;
-    font-size: 1.5rem; }
 
 #about-text .about-text-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
   #about-text .about-text-grid-item {
     margin-bottom: 10px; }
     #about-text .about-text-grid-item:first-child {
@@ -229,7 +228,7 @@ body {
       margin-top: 20px; }
     #about-text .about-text-grid-item p {
       font-size: 1.2rem;
-      line-height: 1.5; }
+      line-height: 1.7; }
   #about-text .about-text-grid img {
     width: 98%;
     height: 100%;
@@ -433,15 +432,17 @@ body {
         width: auto; }
       #section-a .tech-stack-flex-item .tech-stack-grid-item .card-item h3 {
         font-size: 2rem; }
-  .timeline-section .timeline-flex-item .timeline-text {
-    padding: 20px; }
-    .timeline-section .timeline-flex-item .timeline-text h2 {
-      font-size: 2.5rem; }
-    .timeline-section .timeline-flex-item .timeline-text p {
-      margin-top: 5px;
-      font-size: 1.3rem; }
-    .timeline-section .timeline-flex-item .timeline-text .meta-info {
-      margin-bottom: 15px; }
+  .timeline-section .timeline-flex-item {
+    height: 600px; }
+    .timeline-section .timeline-flex-item .timeline-text {
+      padding: 20px; }
+      .timeline-section .timeline-flex-item .timeline-text h2 {
+        font-size: 2.3rem; }
+      .timeline-section .timeline-flex-item .timeline-text p {
+        margin-top: 5px;
+        font-size: 1.3rem; }
+      .timeline-section .timeline-flex-item .timeline-text .meta-info {
+        margin-bottom: 15px; }
   .timeline-section .timeline-flex:nth-child(even) {
     flex-direction: row-reverse;
     background: #333;
@@ -581,7 +582,7 @@ body {
   .timeline-section .timeline-flex {
     flex-direction: column; }
     .timeline-section .timeline-flex-item {
-      height: 500px; }
+      height: 550px; }
       .timeline-section .timeline-flex-item:nth-child(1) {
         height: 300px; }
       .timeline-section .timeline-flex-item .timeline-text {
@@ -711,7 +712,7 @@ body {
 
 @media (max-height: 420px) {
   #navbar .logo i {
-    transform: translateX(-50px); }
+    transform: translateX(-5f0px); }
   #navbar ul li a {
     display: inline-block;
     text-decoration: none;

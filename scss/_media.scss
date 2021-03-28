@@ -190,11 +190,13 @@
   .timeline-section {
     .timeline-flex {
       &-item {
+        height: 600px;
+
         .timeline-text {
           padding: 20px;
 
           h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
           }
 
           p {
@@ -468,7 +470,7 @@
     .timeline-flex {
       flex-direction: column;
       &-item {
-        height: 500px;
+        height: 550px;
         &:nth-child(1) {
           height: 300px;
         }
@@ -736,7 +738,7 @@
   // Header
   #navbar {
     .logo i {
-      transform: translateX(-50px);
+      transform: translateX(-5f0px);
     }
     ul {
       li a {
