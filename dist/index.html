@@ -9,7 +9,7 @@
     ></script>
     <style>
       #main-header {
-        height: 100vh;
+        height: 80vh;
         width: 100vw;
         background: url("./img/main-background.jpg") no-repeat center
           center/cover;
@@ -32,16 +32,26 @@
       <div class="container">
         <nav id="navbar">
           <div class="logo">
-            <i class="fas fa-terminal fa-2x"></i>
+            <a href="./index.html">
+              <i class="fas fa-terminal fa-2x"></i>
+            </a>
           </div>
-          <ul>
-            <li class="navbar-item current"><a href="./index.html">Home</a></li>
-            <li class="navbar-item">
-              <a href="./work_education.html"> Work/Education</a>
-            </li>
-            <li class="navbar-item"><a href="./about.html">About</a></li>
-            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
-          </ul>
+          <div class="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+              <li class="navbar-item current">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./work_education.html"> Work/Education</a>
+              </li>
+              <li class="navbar-item"><a href="./about.html">About</a></li>
+              <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="title">

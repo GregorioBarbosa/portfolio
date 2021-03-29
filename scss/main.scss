@@ -9,6 +9,8 @@
 
 body {
   font-family: "Space Mono", monospace;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 // Header
@@ -16,6 +18,11 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+
+  .menuToggle input {
+    display: none;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -292,7 +299,7 @@ body {
       }
 
       &:nth-child(5) {
-        margin-top: 20px;
+        margin-top: 10px;
       }
 
       p {
@@ -306,7 +313,7 @@ body {
       height: 100%;
       object-fit: cover;
       min-width: 80%;
-      max-height: 80%;
+      max-height: 100%;
     }
   }
 }
