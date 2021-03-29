@@ -369,6 +369,11 @@
 
 //Smart Phones
 @media (max-width: 500px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .container {
     margin: 0 0;
   }

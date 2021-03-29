@@ -29,9 +29,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Space Mono", monospace;
-  max-width: 100%;
-  overflow-x: hidden; }
+  font-family: "Space Mono", monospace; }
 
 #navbar {
   list-style: none;
@@ -528,6 +526,10 @@ body {
         margin-top: 90px; } }
 
 @media (max-width: 500px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden; }
   .container {
     margin: 0 0; }
   #navbar {
