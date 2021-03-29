@@ -371,7 +371,7 @@
 @media (max-width: 500px) {
   html,
   body {
-    max-width: 100%;
+    //  max-width: 100%;
     overflow-x: hidden;
   }
   .container {
@@ -379,10 +379,11 @@
   }
 
   #navbar {
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
 
     .menuToggle {
-      display: block;
+      display: inline-block;
       z-index: 1;
       user-select: none;
       input {
@@ -390,9 +391,8 @@
         width: 40px;
         height: 32px;
         position: absolute;
-        top: 19px;
+        top: 20px;
         right: 20px;
-
         cursor: pointer;
 
         opacity: 0;
@@ -419,11 +419,10 @@
 
       span {
         display: block;
-
         width: 33px;
         height: 4px;
-        top: 20px;
-        left: 85%;
+        top: 30px;
+        left: 70%;
         margin-bottom: 5px;
         position: relative;
         background: #fff;
@@ -446,7 +445,6 @@
         flex-direction: column;
         text-align: center;
         margin-top: -25px;
-
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
@@ -455,8 +453,6 @@
         transform: translate(100%, 0);
 
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
-        top: 0px;
 
         li {
           &:before {
@@ -480,8 +476,9 @@
       }
     }
     .logo {
-      display: none;
-      width: 20px;
+      z-index: 2;
+      margin-top: 12px;
+      margin-left: 20px;
     }
   }
 

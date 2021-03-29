@@ -19,6 +19,10 @@ body {
 
   .menuToggle input {
     display: none;
+
+    span {
+      display: none;
+    }
   }
 
   ul {
@@ -271,6 +275,11 @@ body {
 }
 
 #about-text {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.212) 0px 20px 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+
   .about-text-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
