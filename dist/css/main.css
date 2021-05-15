@@ -772,7 +772,7 @@ body {
     height: 200vh;
     padding: 0rem 0; } }
 
-@media (max-height: 800px) and (min-width: 700px) {
+@media (max-height: 800px) and (min-width: 700px) and (max-width: 850px) {
   #main-header .title {
     padding-top: 30%; }
   #contact-section h1 {
